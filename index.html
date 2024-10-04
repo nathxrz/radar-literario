@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>Radar Literário</title>
+</head>
+
+<body>
+    <main>
+        <section class="book-search">
+            <header>
+                <h1>Radar Literário</h1>
+            </header>
+            <div class="input-container">
+                <input type="text" id="search-input" placeholder="Digite o nome do livro, autor ou gênero">
+                <button id="btn-search" onclick="bookSearch()"><span class="material-symbols-outlined">pan_tool_alt</span></button>
+            </div>
+        </section>
+
+        <section class="search-results" id="search-results">
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+    <script src="./src/bookData.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+</html>
